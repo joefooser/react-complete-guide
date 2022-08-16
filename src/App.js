@@ -1,4 +1,5 @@
-import ExpenseList from "./components/ExpenseList";
+import React from "react";
+import ExpenseList from "./components/Expenses/ExpenseList";
 
 function App() {
   const expenses = [
@@ -18,10 +19,17 @@ function App() {
     {
       id: 'e4',
       title: 'New Desk (Wooden)',
-      amount: 450,
+      amount: 450.00,
       date: new Date(2021, 5, 12),
     },
   ];
+
+  // return React.createElement(
+  //     'div', 
+  //     {}, 
+  //     React.createElement('h2', [], "Let's get started!"),
+  //     React.createElement(ExpenseList, { expenses: expenses})
+  //     );
 
   return (
     <div>
